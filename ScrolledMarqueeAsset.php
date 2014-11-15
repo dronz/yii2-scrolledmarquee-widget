@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
  */
 class ScrolledMarqueeAsset extends AssetBundle
 {
-    public $sourcePath = '@app/components/widgets/scrolledmarquee/assets';
+    public $sourcePath = '@vendor/firstsano/yii2-scrolledmarquee-widget/assets';
     
     public $css = [
         'css/scrolled-marquee.css'
