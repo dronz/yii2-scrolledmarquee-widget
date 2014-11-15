@@ -1,8 +1,9 @@
 {
     "name": "firstsano/yii2-scrolledmarquee-widget",
     "description": "ScrolledMarquee Widget for Yii2.",
-    "keywords": ["yii", "extension", "widget", "scroll", "marquee"],
+    "keywords": ["yii", "extension", "widget", "scroll", "marquee", "scrolledmarquee", "infinitemarquee"],
     "type": "yii2-extension",
+    "license": "MIT",
     "authors": [
         {
             "name": "Alexander Koltunov",
