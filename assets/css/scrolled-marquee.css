@@ -1,0 +1,13 @@
+/* 
+    Created on : Nov 11, 2014, 12:46:45 PM
+    Author     : Alexander Koltunov <firstsano@gmail.com>
+*/
+
+div.scrolled-marquee {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+div.scrolled-marquee > * {
+    display: inline-block;
+}

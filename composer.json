@@ -1,0 +1,22 @@
+{
+    "name": "firstsano/yii2-scrolledmarquee-widget",
+    "description": "ScrolledMarquee Widget for Yii2.",
+    "keywords": ["yii", "extension", "widget", "scroll", "marquee"],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Alexander Koltunov",
+            "email": "firstsano@gmail.com",
+            "homepage": "https://github.com/firstsano"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "newerton/jquery-mousewheel": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "firstsano\\scrolledmarquee\\": ""
+        }
+    }
+}
