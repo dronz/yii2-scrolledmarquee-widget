@@ -13,12 +13,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "newerton/jquery-mousewheel": "dev-master"
-    },
-    "extra": {
-        "require-bower": {
-            "newerton/jquery-mousewheel": "dev-master"
-        }
+        "bower-asset/jquery-mousewheel": "dev-master"
     },
     "autoload": {
         "psr-4": {

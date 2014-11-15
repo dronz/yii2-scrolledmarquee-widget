@@ -25,5 +25,6 @@ class ScrolledMarqueeAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'firstsano\scrolledmarquee\MouseWheelAsset'
     ];
 } 
