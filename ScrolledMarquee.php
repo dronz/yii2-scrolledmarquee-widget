@@ -16,11 +16,13 @@ use yii\helpers\ArrayHelper;
 class ScrolledMarquee extends Widget
 {
     /**
-     * @var array The array of items that compound the gallery. The syntax is as follows:
+     * @var array The array of items that compound the widget. The syntax is as follows:
      *
-     * - src: string, the image to display
-     * - url: string, the image to display on the lightbox. If none found, will display `src`
-     * - options: HTML attributes of the link
+     * - string
+     *      - without tags: is converted to div tag
+     *      - with tags: is processed as precoded html
+     * - array: see Html::tag for documentation. It's keys - name, content, options. If the content - is an
+     *          array, it recursively calls Html::tag.
      */
     public $items = [];
     /**
