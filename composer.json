@@ -15,6 +15,11 @@
         "yiisoft/yii2": "*",
         "newerton/jquery-mousewheel": "dev-master"
     },
+    "extra": {
+        "require-bower": {
+            "newerton/jquery-mousewheel": "dev-master"
+        }
+    },
     "autoload": {
         "psr-4": {
             "firstsano\\scrolledmarquee\\": ""
