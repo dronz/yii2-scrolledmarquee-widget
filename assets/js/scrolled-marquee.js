@@ -58,12 +58,12 @@ firstsano.scrolledmarquee = (function($){
             if(offset > 0) {
                 var lrnOffset = offsetInsideContainer(lrn) + lrn.outerWidth(true) - outerSideWidth(lrn);
                 if(lrnOffset <= 0) {
-                    scrollLeft = leftInitialPosition + lrnOffset * (-1);
+                    scrollLeft = leftInitialPosition - lrnOffset + offset;
                 }
             } else {
                 var frnOffset = offsetInsideContainer(frn) - outerSideWidth(frn) - $(selector).width();
                 if(frnOffset >= 0) {
-                    scrollLeft = rightInitialPosition + frnOffset * (-1);
+                    scrollLeft = rightInitialPosition - frnOffset + offset;
                 }
             }
             $(selector).scrollLeft(scrollLeft);
@@ -103,7 +103,7 @@ firstsano.scrolledmarquee = (function($){
         };
         var registerAutocontrolEvents = function() {
             $(window).scroll(function() { moveObjectsOnFocus(); });
-            $(window).load(function() { moveObjectsOnFocus(); });
+            moveObjectsOnFocus();
         };
         var registerEvents = function() {
             var thiz = this;
@@ -114,14 +114,16 @@ firstsano.scrolledmarquee = (function($){
 
         for(var i in opts) { self.options[i] = opts[i]; }
         self.allowMovement = !self.options.autostop;
-        configureObjectsAndClones();
-        if(self.options.autostop) {
-            registerAutocontrolEvents();
-        } else {
-            moveObjects();
-        }
-        if($.fn.mousewheel) {
-            registerScrollEvents();
-        }
+        $(window).load(function() {
+            configureObjectsAndClones();
+            if(self.options.autostop) {
+                registerAutocontrolEvents();
+            } else {
+                moveObjects();
+            }
+            if($.fn.mousewheel) {
+                registerScrollEvents();
+            }
+        });
     };
 })(jQuery);
