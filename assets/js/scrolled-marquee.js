@@ -36,12 +36,19 @@ firstsano.scrolledmarquee = (function($){
             var elementsWidth = 0;
             lastRealNode = children.last();
             firstRealNode = children.first();
+
             children.each(function(i, el) {
                 elementsWidth += $(el).outerWidth(true);
                 $(selector).append($(el).clone());
-                $(selector).prepend($(children[children.length - i - 1]).clone());
                 if(elementsWidth > containerWidth) { return false; }
             });
+            elementsWidth = 0;
+            $(children.get().reverse()).each(function(i, el) {
+                elementsWidth += $(el).outerWidth(true);
+                $(selector).prepend($(el).clone());
+                if(elementsWidth > containerWidth) { return false; }
+            });
+
             leftInitialPosition = offsetInsideContainer(firstRealNode) - outerSideWidth(firstRealNode);
             rightInitialPosition = offsetInsideContainer(lastRealNode) + lastRealNode.outerWidth(true)
                                 - outerSideWidth(firstRealNode) - containerWidth;
