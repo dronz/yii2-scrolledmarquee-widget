@@ -1,6 +1,6 @@
 <?php
 
-namespace firstsano\scrolledmarquee;
+namespace dronz\scrolledmarquee;
 
 use yii\web\AssetBundle;
 
