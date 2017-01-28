@@ -1,6 +1,6 @@
 <?php
 
-namespace firstsano\scrolledmarquee;
+namespace dronz\scrolledmarquee;
 
 use yii\web\AssetBundle;
 
@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
  */
 class ScrolledMarqueeAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/firstsano/yii2-scrolledmarquee-widget/assets';
+    public $sourcePath = '@vendor/dronz/yii2-scrolledmarquee-widget/assets';
     
     public $css = [
         'css/scrolled-marquee.css'
