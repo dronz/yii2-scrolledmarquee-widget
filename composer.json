@@ -1,5 +1,5 @@
 {
-    "name": "firstsano/yii2-scrolledmarquee-widget",
+    "name": "dronz/yii2-scrolledmarquee-widget",
     "description": "ScrolledMarquee Widget for Yii2.",
     "keywords": ["yii", "extension", "widget", "scroll", "marquee", "scrolledmarquee", "infinitemarquee"],
     "type": "yii2-extension",
@@ -13,11 +13,11 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/jquery-mousewheel": "dev-master"
+        "bower-asset/jquery-mousewheel": "*"
     },
     "autoload": {
         "psr-4": {
-            "firstsano\\scrolledmarquee\\": ""
+            "dronz\\scrolledmarquee\\": ""
         }
     }
 }
