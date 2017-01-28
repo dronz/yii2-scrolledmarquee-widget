@@ -15,12 +15,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require "firstsano/yii2-scrolledmarquee-widget" "*"
+php composer.phar require "dronz/yii2-scrolledmarquee-widget" "*"
 ```
 or add
 
 ```json
-"firstsano/yii2-scrolledmarquee-widget" : "*"
+"dronz/yii2-scrolledmarquee-widget" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -84,7 +84,7 @@ clientOptions - array of options passed to javascript. Option keys are:
             ]
         ]
 ];?>
-<?= firstsano\scrolledmarquee\ScrolledMarquee::widget(['items' => $items]);?>
+<?= dronz\scrolledmarquee\ScrolledMarquee::widget(['items' => $items]);?>
 // ...
 ```
 
